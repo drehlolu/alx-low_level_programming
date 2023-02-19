@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 
 /**
  * main - entry point
@@ -8,17 +7,29 @@
  */
 int main(void)
 {
-int i;
+    int num = 48;
 
-for (i = '0'; i <= '9'; i++)
-{
-putchar(i);
-if (i != '9')
-{
-putchar(',');
-putchar(' ');
-}
-}
-putchar('\n')
-return (0);
+    while (num <= 57)
+    {
+        int num2 = num;
+
+        while (num2 <= 57)
+        {
+            putchar(num);
+            putchar(num2);
+
+            if (num != 56 || num2 != 57)
+            {
+                putchar(44);
+                putchar(32);
+            }
+
+            num2++;
+        }
+        num++;
+    }
+
+    putchar('\n');
+
+    return (0);
 }
