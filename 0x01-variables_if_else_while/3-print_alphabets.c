@@ -12,14 +12,11 @@ int ch;
 
 for (ch = 'a'; ch <= 'z'; ch++)
 {
-if (ch != 'e' && ch != 'q')
-{
 putchar(ch);
 }
-else
+for (ch = 'A'; ch <= 'Z'; ch++)
 {
-putchar('\n');
-}
+putchar(ch);
 }
 return (0);
 }
