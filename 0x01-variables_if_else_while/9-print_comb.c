@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - entry point 
+ * main - entry point
  * Return: Always 0 (success)
  */
 int main(void)
 {
 int i;
-
 for (i = '0'; i <= '9'; i++)
 {
 putchar(i);
